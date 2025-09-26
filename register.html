@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - Game of Thrones</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+
+  <!-- Fuente épica -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f8f9fa;
+      font-family: 'Cinzel', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container py-5">
+    <section id="registrarse" class="text-light">
+      <h2 class="text-warning text-center mb-4">Únete al mundo de Westeros</h2>
+      <p class="text-center text-muted">Regístrate como un verdadero miembro de las casas nobles</p>
+      
+      <form class="bg-black border border-warning p-4 rounded shadow-lg" style="max-width: 600px; margin: 0 auto;">
+        <div class="mb-3">
+          <label for="nombre" class="form-label text-warning">Nombre</label>
+          <input type="text" class="form-control bg-dark text-light border-warning" id="nombre" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="apellido" class="form-label text-warning">Apellido</label>
+          <input type="text" class="form-control bg-dark text-light border-warning" id="apellido" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label text-warning">Correo electrónico</label>
+          <input type="email" class="form-control bg-dark text-light border-warning" id="email" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="casa" class="form-label text-warning">Casa de lealtad</label>
+          <select class="form-select bg-dark text-light border-warning" id="casa" required>
+            <option selected disabled>Elige tu casa...</option>
+            <option>Stark</option>
+            <option>Targaryen</option>
+            <option>Lannister</option>
+            <option>Baratheon</option>
+            <option>Greyjoy</option>
+            <option>Martell</option>
+            <option>Tyrell</option>
+            <option>Otra</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="contrasena" class="form-label text-warning">Contraseña</label>
+          <input type="password" class="form-control bg-dark text-light border-warning" id="contrasena" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="confirmarContrasena" class="form-label text-warning">Confirmar contraseña</label>
+          <input type="password" class="form-control bg-dark text-light border-warning" id="confirmarContrasena" required />
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-warning fw-bold">Jurar Lealtad</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-warning py-4 mt-5">
+    <p class="mb-0">© 2025 Game of Thrones Fan Page - Proyecto académico</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
