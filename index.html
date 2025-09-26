@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informacion Game of Thrones</title>
+    <title>Información Game of Thrones</title>
 
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,183 +17,300 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Fuente épica -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/Style.css" />
   </head>
-  <body class="">
+  <body class="bg-dark text-light" style="font-family: 'Cinzel', serif">
+    <!-- NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-info-subtle fixed-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-lg"
+      >
         <div class="container-fluid justify-content-center">
-          <a class="navbar-brand" href="#"
-            ><img
+          <a class="navbar-brand" href="#">
+            <img
               src="images/GOT LOGO.jpg"
               alt="Logo Got"
-              class="img-fluid"
+              class="img-fluid rounded-circle"
               style="width: 60px"
-          /></a>
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#sinopsis">Sinopsis</a>
-              <a class="nav-link" href="#grabacion">Set's record</a>
-              <a class="nav-link" href="#tercera">Characters</a>
-              <a class="nav-link" href="#cuarta">Seasons</a>
+              <a class="nav-link text-warning fw-bold" href="#sinopsis"
+                >Sinopsis</a
+              >
+              <a class="nav-link text-warning fw-bold" href="#grabacion"
+                >Set's record</a
+              >
+              <a class="nav-link text-warning fw-bold" href="#Characters"
+                >Characters</a
+              >
+              <a class="nav-link text-warning fw-bold" href="#seasons"
+                >Seasons</a
+              >
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link text-warning fw-bold" href="#registrarse"
+                >register</a
+              >
+              <a class="nav-link text-warning fw-bold" href="#iniciar_sesion"
+                >sign in</a
+              >
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section class="container">
-        <section style="margin-top: 6rem">
-          <div class="row my-3 pb-3 border-bottom" id="sinopsis">
-            <div class="col-md-12">
-              <h3 class="text-primary">Sinopsis</h3>
-            </div>
-            <div class="col-md-5">
+    <main class="container" style="margin-top: 7rem">
+      <!-- Sinopsis -->
+      <section class="py-5 border-bottom" id="sinopsis">
+        <h3 class="text-warning text-center mb-4">Sinopsis</h3>
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3">
+            <div class="ratio ratio-16x9 shadow-lg">
               <iframe
-                width="100%"
-                height="315"
                 src="https://www.youtube.com/embed/TZE9gVF1QbA?si=IwIdgB02VHh9UwsF"
                 title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
-            <div
-              class="col-md-7 d-flex justify-content-center align-items-center"
-            >
-              <p class="text-secondary text-center text-md-center">
-                En un mundo fantástico y en un contexto medieval varias
-                familias, relativas a la nobleza, se disputan el poder para
-                dominar el territorio ficticio de Poniente (Westeros) y tomar el
-                control de los Siete Reinos desde el Trono de Hierro, lugar
-                donde el rey ejerce el poder. Mientras tiene lugar una guerra
-                civil para conseguir el poder, detrás del Muro que divide el
-                reino de Poniente y la zona norte, los muertos amenazan con
-                librar la batalla contra los vivos. Entretanto, Daenerys
-                Targaryen, la hija del antiguo rey, regresa a Poniente para
-                reclamar su lugar y así vengar el deceso de sus ascendientes en
-                la guerra civil anterior.
-              </p>
-            </div>
           </div>
-        </section>
+          <div class="col-md-7">
+            <p class="lead text-light text-center text-md-start">
+              En un mundo fantástico y en un contexto medieval varias familias
+              se disputan el poder por el Trono de Hierro. Mientras tanto, más
+              allá del Muro, los muertos amenazan con iniciar la batalla final
+              contra los vivos. Daenerys Targaryen regresa para reclamar su
+              lugar y vengar la caída de su familia.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section>
-          <div class="row my-3 pb-3 border-bottom" id="grabacion">
-            <div class="col-md-12">
-              <h3 class="text-primary">Set's record</h3>
-            </div>
-            <div class="col-md-7">
+      <!-- Set's record -->
+      <section class="py-5 border-bottom" id="grabacion">
+        <h3 class="text-warning text-center mb-4">Set's record</h3>
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <p class="lead text-light text-center text-md-start">
+              Estas son algunas de las ubicaciones reales utilizadas en el
+              rodaje de Game of Thrones. Desde el imponente Castle Ward hasta el
+              misterioso Dark Hedges, cada lugar dio vida al mundo de Westeros y
+              sumergió a los fanáticos en su historia épica.
+            </p>
+          </div>
+          <div class="col-md-7 mb-3">
+            <div class="ratio ratio-16x9 shadow-lg">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1sKvbtyJ5jMk0yrYfWYuEVo4DxQzYlroI&ehbc=2E312F"
-                width="100%"
-                height="480"
               ></iframe>
             </div>
-            <div
-              class="col-md-5 d-flex justify-content-center align-items-center"
-            >
-              <p class="text-secondary text-center text-md-center">
-                Estas son algunas de las ubicaciones que se usaron en el rodaje
-                de la famosa serie Game of Thrones. Desde la transformación de
-                Castle Ward en Winterfell hasta el inquietante Dark Hedges como
-                Kingsroad, cada ubicación capturó la esencia de Westeros y
-                atrajo a los fanáticos al mundo de GoT. A continuación,
-                descubrirás cada una de las ubicaciones de Juego de Tronos en
-                Irlanda del Norte, desde el castillo de Dunluce (Pyke) hasta el
-                bosque de Glenariff (Runestone).
-              </p>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <div class="row my-3 pb-3 border-bottom" id="Characters">
-            <div class="col-md-12">
-              <h3 class="text-primary">Characters</h3>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-              <div class="card text-center" style="width: 100%">
-                <div class="card-header bg-white border-0">
-                  <img
-                    src="images/Rey caminante.jpg"
-                    alt="Rey"
-                    class="img-fluid"
-                    style="max-height: 250px"
-                  />
-                </div>
-                <div class="card-body">
-                  <p>
-                    El Rey de la Noche fue el primero de los Caminantes Blancos,
-                    habiendo existido desde la Era del Amanecer. Eventualmente,
-                    se convirtió en el líder del ejército de los espectros.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-              <div class="card text-center" style="width: 100%">
-                <div class="card-header bg-white border-0">
-                  <img
-                    src="images/daeneris.jpg"
-                    alt="Rey"
-                    class="img-fluid"
-                    style="max-height: 250px"
-                  />
-                </div>
-                <div class="card-body">
-                  <p>
-                    "Pasé mi vida en tierras extranjeras. Tantos hombres han
-                    intentado matarme que no recuerdo sus nombres. Me han
-                    vendido, me han encadenado y traicionado, violado y
-                    profanado. ¿Sabes qué me mantuvo firme durante todos esos
-                    años en el exilio? Fe. No en ningún dios. Ni en mitos y
-                    leyendas. En mí misma. El mundo no había visto un dragón en
-                    siglos, hasta que nacieron mis hijos. Los Dothraki no habían
-                    cruzado el mar. Ningún mar. Lo hicieron por mí. Nací para
-                    gobernar los Siete Reinos, y lo haré."
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex flex-column align-items-center">
-              <div class="card text-center" style="width: 100%">
-                <div class="card-header bg-white border-0">
-                  <img
-                    src="images/Snow.jpg"
-                    alt="Rey"
-                    class="img-fluid"
-                    style="max-height: 250px"
-                  />
-                </div>
-                <div class="card-body">
-                  <p>
-                    "Todos me coronasteis rey. Nunca lo quise. Nunca lo pedí.
-                    ¡Pero lo acepté, porque el Norte es mi hogar! Es parte de
-                    mí, y nunca dejaré de luchar por ello, sin importar las
-                    posibilidades."
-                  </p>
-                </div>
+      <!-- Characters -->
+      <section class="py-5" id="Characters">
+        <h3 class="text-warning text-center mb-4">Characters</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card bg-secondary text-light shadow-lg h-100">
+              <img
+                src="images/Rey caminante.jpg"
+                class="card-img-top"
+                style="max-height: 300px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  El Rey de la Noche fue el primero de los Caminantes Blancos y
+                  el líder del ejército de los espectros.
+                </p>
               </div>
             </div>
           </div>
-        </section>
+
+          <div class="col-md-4">
+            <div class="card bg-secondary text-light shadow-lg h-100">
+              <img
+                src="images/daeneris.jpg"
+                class="card-img-top"
+                style="max-height: 300px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  “Nací para gobernar los Siete Reinos, y lo haré.” — Daenerys
+                  Targaryen.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card bg-secondary text-light shadow-lg h-100">
+              <img
+                src="images/Snow.jpg"
+                class="card-img-top img-fluid"
+                style="
+                  max-height: 300px;
+                  object-fit: cover;
+                  object-position: top;
+                "
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  “El Norte es mi hogar y nunca dejaré de luchar por él.” — Jon
+                  Snow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seasons">
+        <h3 class="text-warning text-center mb-4">Seasons</h3>
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <img
+              src="images/1era temporada.jpg"
+              class="card-img-top img-fluid"
+              style="max-height: 300px; object-fit: cover; object-position: top"
+            />
+          </div>
+        </div>
+        <div class="row align-items-center py-4">
+          <div class="col-md-12">
+            <h2 class="text-warning text-center mb-4">1 Season</h2>
+            <p class="lead text-light text-center text-md-start">
+              En esta temporada los Siete Reinos están gobernados por la casa
+              Baratheon, con el rey Robert que está sentado en el Trono de
+              Hierro. La familia Baratheon visita a los Stark en Invernalia.
+              Allí Robert le propone a su amigo Ned, padre de los Stark, que sea
+              su mano y consejero. Durante este viaje, Bran Stark, uno de los
+              hijos menores, descubre a Cersei y Jaime Lannister, hermanos,
+              teniendo relaciones. Después, Jaime decide arrojar al niño por la
+              ventana y lo deja paralítico. Ned acepta la propuesta de Robert y
+              se convierte en Mano del Rey. Por ello, viaja con sus hijas, Sansa
+              y Arya, hacia Desembarco del Rey. Una vez allí, Ned promete a
+              Sansa con Joffrey, hijo del rey Robert. Asimismo, Jon Snow, el
+              hijo bastardo de Ned, decide alistarse en la Guardia de la Noche y
+              se dirige al Muro. Por su parte, Vyserys Targaryen, hijo del rey
+              loco, entrega a su hermana Daenerys al líder de la tribu Dothraki.
+              Aunque este acto termina por costarle la vida. Después, Daenerys
+              queda viuda y pierde a su bebé pero, a cambio, se convierte en la
+              madre de tres dragones. Al final de la temporada, el rey Robert
+              muere y los Lannister acusan a Ned como el único culpable. Joffrey
+              pasa a ser el rey y manda ejecutar a Ned Stark.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <img
+              src="images/2da temporada.jpg"
+              class="card-img-top img-fluid"
+              style="max-height: 300px; object-fit: fill; object-position: top"
+            />
+          </div>
+        </div>
+        <div class="row align-items-center py-4">
+          <div class="col-md-12">
+            <h2 class="text-warning text-center mb-4">2 Season</h2>
+            <p class="lead text-light text-center text-md-start">
+              En esta temporada los hermanos Renly y Stannis Baratheon luchan
+              por conseguir el trono tras la muerte de su hermano Robert. Robb
+              Stark declara la guerra a la familia Lannister y, con el apoyo de
+              su madre, se proclama “Rey en el Norte”. También captura a Jaime
+              Lannister como venganza. En Desembarco del Rey, Joffrey somete a
+              Sansa a diferentes torturas mientras que su hermana pequeña, Arya,
+              logra huir de la ciudad gracias a Gendry, el hijo bastardo del rey
+              Robert. En su aventura, la joven Stark conoce a Jaqen H´ghar, un
+              hombre que le habla de los hombres sin rostro. Por su parte,
+              Daenerys viaja con su consejero y sus dragones hacia la ciudad de
+              Qarth. En Invernalia, Theon Greyjoy traiciona a los Stark y ordena
+              matar a Robb y Rickon, los hijos menores del matrimonio, pero no
+              lo consigue. Finalmente, tiene lugar la “Batalla de Aguasnegras”,
+              donde Stannis ataca la ciudad de Desembarco del Rey, aunque Tyrion
+              logra derrotar a su ejército.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <img
+              src="images/3era temporada.jpg"
+              class="card-img-top img-fluid"
+              style="max-height: 300px; object-fit: fill; object-position: top"
+            />
+          </div>
+        </div>
+        <div class="row align-items-center py-4">
+          <div class="col-md-12">
+            <h2 class="text-warning text-center mb-4">3 Season</h2>
+            <p class="lead text-light text-center text-md-start">
+              En esta temporada, Joffrey obliga a Tyrion Lannister, su tío, a
+              casarse con Sansa Stark y él se promete con Margaery Tyrell. Por
+              su parte, Jon Snow viaja más allá del Muro, conoce a los salvajes
+              y se enamora de una mujer llamada Ygritte. Daenerys se dirige
+              hacia la ciudad de Astapor, donde libera a los esclavos de sus
+              amos y crea un ejército de inmaculados. Entonces, la joven se
+              convierte en “rompedora de cadenas”. Finalmente, Robb Stark es
+              traicionado y asesinado junto a su madre y su prometida durante
+              “La Boda Roja”.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <img
+              src="images/4ta temporada.jpg"
+              class="card-img-top img-fluid"
+              style="max-height: 300px; object-fit:fill; object-position: center "
+            />
+          </div>
+        </div>
+        <div class="row align-items-center py-4">
+          <div class="col-md-12">
+            <h2 class="text-warning text-center mb-4">4 Season</h2>
+            <p class="lead text-light text-center text-md-start">
+              En esta temporada tiene lugar la boda de Joffrey y Margaery, donde
+              el joven rey muere envenenado. Después, Cersei culpa a su hermano
+              Tyrion de lo sucedido y lo condena a un juicio por combate. Por
+              otro lado, Sansa logra escapar de Desembarco del Rey con la ayuda
+              de Meñique, quien le promete llevarla con su familia, y Arya viaja
+              hacia la ciudad de Braavos. Por su parte Bran Stark va hacia el
+              Muro con su criado Hodor y también llega a la cueva de los cuervos
+              de tres ojos. Entretanto, los Salvajes atacan a la Guardia de la
+              Noche e Ygritte, la enamorada de Jon Snow, muere en la batalla.
+              Finalmente, Tyrion logra escapar con la ayuda de su hermano Jaime
+              y mata a su padre y a su amante antes de su huida.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- Footer -->
+    <footer class="bg-black text-center text-warning py-4 mt-5">
+      <p class="mb-0">© 2025 Game of Thrones Fan Page - Proyecto académico</p>
+    </footer>
   </body>
 </html>

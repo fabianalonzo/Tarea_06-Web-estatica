@@ -1,0 +1,39 @@
+/* Fuente global */
+body {
+  font-family: 'Cinzel', serif;
+}
+
+/* Mejora leve en las imágenes de las tarjetas */
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+/* Un poco de sombra al pasar el mouse sobre la tarjeta */
+.card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+/* Títulos un poco más llamativos */
+h3 {
+  color: #d4af37;
+  text-align: center;
+}
+
+/* Ajuste para que los enlaces cambien de color al pasar el mouse */
+.nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* Footer con fondo oscuro sencillo */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
