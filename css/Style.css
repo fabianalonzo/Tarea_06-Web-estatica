@@ -3,6 +3,22 @@ body {
   font-family: 'Cinzel', serif;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/game-of-thrones.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.15; /* Nivel de visibilidad */
+  z-index: -1; /* Para que quede detrás del contenido */
+}
+
+
 /* Mejora leve en las imágenes de las tarjetas */
 .card-img-top {
   height: 300px;
